@@ -1,0 +1,23 @@
+---
+import type { Speaker } from '../../types/speaker';
+
+interface Props {
+  speaker: Speaker;
+}
+
+const { speaker } = Astro.props;
+---
+
+<div class="group bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
+  <div class="space-y-4 text-center">
+    <div class="relative w-32 h-32 mx-auto">
+      <img src={speaker.image} alt={speaker.name}
+           class="w-full h-full object-cover rounded-full border-2 border-cyan-400 group-hover:border-teal-400 transition-colors duration-300" />
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-xl font-semibold text-gray-100">{speaker.name}</h3>
+      <p class="text-cyan-400 text-sm">{speaker.role}</p>
+      <p class="text-gray-400 text-sm italic">"{speaker.type}"</p>
+    </div>
+  </div>
+</div>
