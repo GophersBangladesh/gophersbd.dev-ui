@@ -1,0 +1,42 @@
+---
+// components/SponsorsSection.astro
+import type { Sponsor } from '../../types/sponsor';
+import SponsorCard from '../shared/SponsorCard.astro';
+
+const sponsors: Sponsor[] = [
+  {
+    alt: "AGT",
+    url: "https://www.linkedin.com/company/all-generation-tech",
+    logo: "/images/sponsors/agt.jpg",
+  },
+  {
+    alt: "Technonext",
+    url: "https://technonext.com/",
+    logo: "/images/sponsors/technonext.svg",
+  },
+  {
+    alt: "Goland",
+    url: "https://www.jetbrains.com/go/",
+    logo: "/images/sponsors/goland.png",
+  },
+  {
+    alt: "Pathao",
+    url: "https://pathao.com/bn/",
+    logo: "/images/sponsors/logo_white_pathao.svg",
+  },
+  // Add more sponsors as needed...
+];
+---
+
+<section class="space-y-6 md:space-y-8 lg:space-y-10 slide-up">
+  <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-100 relative font-oswald uppercase">
+    Our Sponsors
+    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-cyan-500 to-teal-400"></span>
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 justify-items-center max-w-5xl mx-auto">
+    {sponsors.map((sponsor) => (
+      <SponsorCard sponsor={sponsor} />
+    ))}
+  </div>
+</section>

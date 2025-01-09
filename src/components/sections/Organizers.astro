@@ -1,0 +1,40 @@
+---
+import OrganizerCard from '../shared/OrganizerCard.astro';
+import type { Organizer } from '../../types/organizer';
+
+const organizers: Organizer[] = [
+  {
+    name: "Moniruzzaman Monir",
+    role: "Lead Software Engineer @ AGT",
+    image: "/images/speakers/monir.png"
+  },
+  {
+    name: "Sakib Sami",
+    role: "Senior Software Engineer @ GERIMEDICA B.V, Ex Twillo inc",
+    image: "/images/speakers/sakib.png"
+  },
+  {
+    name: "Mahfuzur Rahman",
+    role: "Principle Engineering Manager @ TECHNONEXT",
+    image: "/images/speakers/mahfuzur.png"
+  },
+  {
+    name: "Saddam Hossain",
+    role: "Staff Software Engineer @ Pathao",
+    image: "/images/speakers/saddam.png"
+  },
+];
+---
+
+<section class="space-y-6 md:space-y-8 lg:space-y-10 slide-up">
+  <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-gray-100 relative font-oswald uppercase">
+    Organizers
+    <span class="absolute -bottom-3 left-1/2 -translate-x-1/2 w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-cyan-500 to-teal-400"></span>
+  </h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
+    {organizers.map((organizer) => (
+      <OrganizerCard organizer={organizer} />
+    ))}
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+import type { Organizer } from '../../types/organizer';
+
+interface Props {
+  organizer: Organizer;
+}
+
+const { organizer } = Astro.props;
+---
+
+<div class="group bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
+  <div class="space-y-4 text-center">
+    <div class="relative w-28 h-28 mx-auto">
+      <img src={organizer.image} alt={organizer.name}
+           class="w-full h-full object-cover rounded-full border-2 border-cyan-400 group-hover:border-teal-400 transition-colors duration-300" />
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-lg font-semibold text-gray-100">{organizer.name}</h3>
+      <p class="text-cyan-400 text-sm">{organizer.role}</p>
+    </div>
+  </div>
+</div>

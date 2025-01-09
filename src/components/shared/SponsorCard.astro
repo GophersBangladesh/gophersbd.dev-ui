@@ -1,0 +1,16 @@
+---
+import type { Sponsor } from '../../types/sponsor';
+
+interface Props {
+  sponsor: Sponsor;
+}
+
+const { sponsor } = Astro.props;
+---
+
+<div class="group bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
+  <a href={sponsor.url} target="_blank" rel="noopener noreferrer" class="block relative text-center">
+    <img src={sponsor.logo} alt={sponsor.alt} 
+         class="h-24 md:h-28 lg:h-32 w-48 md:w-56 lg:w-64 object-contain mx-auto group-hover:opacity-80 transition-opacity duration-300" />
+  </a>
+</div>
