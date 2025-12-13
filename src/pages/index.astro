@@ -1,100 +1,183 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Speakers from '../components/sections/Speakers.astro';
-import Oranizers from '../components/sections/Organizers.astro';
-import Sponsors from '../components/sections/Sponsors.astro';
 ---
 
-<Layout title="GOLANG MEETUP 2025 — GOPHERS BANGLADESH">
+<Layout title="Gophers Bangladesh — Go Programming Community">
   <div class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-200 min-h-screen relative overflow-hidden">
-    <!-- Replace the missing gopher pattern with a repeating gradient -->
     <div class="absolute inset-0 bg-gradient-to-r from-gray-800/10 to-gray-900/10 pattern-bg"></div>
-    <div class="container-custom px-4 py-6 md:py-12 lg:py-16 mx-auto space-y-8 md:space-y-12 lg:space-y-16 relative opacity-0 translate-y-6" id="main-content">
-      <section class="space-y-6 md:space-y-8 lg:space-y-10 text-center">
-        <div class="space-y-4 md:space-y-6 slide-up max-w-6xl mx-auto">
-          <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
-            <img src="images/line.png" alt="Golang Logo" class="hidden md:block w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-12 object-contain" />
-            <img src="images/Go-Logo_Blue.png" alt="Golang Logo" class="md:hidden w-40 h-26 md:w-24 md:h-16 lg:w-24 lg:h-128 object-contain" />
-            <h1 class="font-oswald uppercase font-bold text-3xl md:text-5xl lg:text-7xl xl:text-8xl bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent animate-gradient tracking-wider leading-tight">
-              Golang Meetup 2025
-            </h1>
+    
+    <div class="container-custom px-4 py-6 md:py-12 lg:py-16 mx-auto relative">
+      <!-- Hero Section -->
+      <section class="min-h-[80vh] flex flex-col items-center justify-center text-center space-y-8 md:space-y-12">
+        <div class="space-y-6 slide-up">
+          <div class="flex justify-center items-center">
+            <img src="favicon.png" alt="Gophers Bangladesh Logo" class="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain animate-float" />
           </div>
           
-          <div class="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 slide-up">
-            <span class="text-base md:text-lg lg:text-xl text-gray-400">11<sup>th</sup> January, 2025 | Organized by</span>
-            <a href="https://www.facebook.com/groups/8890201047753940" 
-               class="flex items-center gap-3 text-cyan-300 hover:text-teal-300 transition-all duration-300">
-              <div class="relative">
-                <img src="favicon.png" alt="Gophers Logo" 
-                     class="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full shadow-lg group-hover:shadow-teal-500/50 transition-all duration-300 hover:scale-110" />
-              </div>
-              <span class="text-base md:text-lg lg:text-xl underline decoration-2">Gophers Bangladesh</span>
-            </a>
-          </div>
+          <h1 class="font-oswald uppercase font-bold text-4xl md:text-6xl lg:text-8xl bg-gradient-to-r from-cyan-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent animate-gradient tracking-wider">
+            Gophers Bangladesh
+          </h1>
+          
+          <p class="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            A vibrant Go programming community in Bangladesh with hundreds of passionate Gophers. Join us for local hangouts, open source contributions, and knowledge sharing.
+          </p>
         </div>
 
-        <div class="flex flex-col gap-4 md:flex-row md:gap-6 justify-center items-center text-base md:text-lg lg:text-xl slide-up">
-          <div class="info-card">
-            <span class="text-cyan-400 text-xl md:text-2xl">📅</span>
-            <span>11<sup>th</sup> January, 2025</span>
-          </div>
-          <div class="hidden md:block w-px h-8 bg-gray-700"></div>
-          <div class="info-card">
-            <span class="text-cyan-400 text-xl md:text-2xl">📍</span>
-            <a href="https://maps.app.goo.gl/pCjfaFhHNfPHZZCy7" 
-               class="text-cyan-300 hover:text-teal-300 transition-colors duration-300 underline decoration-2">
-               The Attention Network
-            </a>
-          </div>
-          <div class="hidden md:block w-px h-8 bg-gray-700"></div>
-          <div class="info-card">
-            <span class="text-cyan-400 text-xl md:text-2xl">🔗</span>
-            <a href="https://www.facebook.com/events/445191745333095" 
-               class="text-cyan-300 hover:text-teal-300 transition-colors duration-300 underline decoration-2">
-               Facebook Event
-            </a>
-          </div>
+        <!-- Community Links -->
+        <div class="slide-up flex flex-wrap justify-center gap-4">
+          <a href="https://discord.gg/gophersbd" 
+             target="_blank"
+             class="inline-flex items-center gap-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:shadow-2xl hover:shadow-indigo-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+            Join Discord
+          </a>
+          <a href="https://www.facebook.com/groups/8890201047753940" 
+             target="_blank"
+             class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Facebook Group
+          </a>
+          <a href="https://github.com/GophersBangladesh" 
+             target="_blank"
+             class="inline-flex items-center gap-3 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
         </div>
 
-        <div class="pt-6 md:pt-8 lg:pt-4 slide-up max-w-4xl mx-auto">
-          <div class="space-y-6 md:space-y-8">
-            <!-- Countdown Timer -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-              <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/20">
-                <div id="days" class="text-4xl md:text-5xl font-bold text-cyan-400 font-oswald">00</div>
-                <div class="text-gray-400 text-sm mt-1">Days</div>
+        <!-- Past Event Card -->
+        <div class="slide-up max-w-4xl w-full">
+          <a href="/events/golang-meetup-2025" class="block group">
+            <div class="relative bg-gradient-to-br from-gray-700/10 to-gray-800/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-2 border-gray-600/30 hover:border-gray-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-gray-500/20">
+              <div class="relative space-y-6">
+                <div class="flex items-center justify-center gap-3">
+                  <img src="images/line.png" alt="Golang Logo" class="w-16 h-8 md:w-20 md:h-10 object-contain" />
+                  <span class="inline-block bg-gray-500/20 text-gray-300 text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-gray-500/30 uppercase tracking-wider">
+                    Past Event - January 2025
+                  </span>
               </div>
-              <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/20">
-                <div id="hours" class="text-4xl md:text-5xl font-bold text-cyan-400 font-oswald">00</div>
-                <div class="text-gray-400 text-sm mt-1">Hours</div>
+                
+                <h2 class="font-oswald uppercase font-bold text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-transparent">
+                  Golang Meetup 2025
+                </h2>
+                
+                <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-base md:text-lg text-gray-400">
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400 text-xl">📅</span>
+                    <span>11th January, 2025</span>
               </div>
-              <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/20">
-                <div id="minutes" class="text-4xl md:text-5xl font-bold text-cyan-400 font-oswald">00</div>
-                <div class="text-gray-400 text-sm mt-1">Minutes</div>
-              </div>
-              <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-cyan-500/20">
-                <div id="seconds" class="text-4xl md:text-5xl font-bold text-cyan-400 font-oswald">00</div>
-                <div class="text-gray-400 text-sm mt-1">Seconds</div>
+                  <div class="hidden md:block w-px h-6 bg-gray-600"></div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400 text-xl">📍</span>
+                    <span>The Attention Network</span>
               </div>
             </div>
             
-            <div class="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700/50">
-              <div class="space-y-6 text-center">
-                <p class="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
-                  Join us for the first-ever Golang Meetup! Connect, learn, and celebrate with fellow Gophers and industry leaders. All skill levels welcome—don’t miss it!
+                <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
+                  Our first-ever Golang Meetup was a success! Check out the speakers, organizers, and highlights from this amazing event.
                 </p>
-                <div class="inline-flex items-center gap-2 md:gap-3 bg-gray-500 text-gray-900 font-semibold py-2.5 md:py-3 lg:py-4 px-5 md:px-6 lg:px-10 text-base md:text-lg lg:text-xl rounded-full shadow-xl font-oswald uppercase cursor-not-allowed">
-                  Registration Closed
+                
+                <div class="flex items-center justify-center gap-3 text-gray-300 font-semibold text-lg md:text-xl group-hover:gap-4 transition-all">
+                  <span>View Event Recap</span>
+                  <svg class="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
                 </div>
               </div>
             </div>            
+          </a>
+        </div>
+
+        <!-- Future Event Teaser -->
+        <div class="slide-up max-w-2xl w-full text-center">
+          <div class="bg-gradient-to-br from-cyan-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-cyan-500/20">
+            <h3 class="text-xl md:text-2xl font-bold text-cyan-300 mb-3 font-oswald uppercase">🎉 Next Meetup Coming Soon!</h3>
+            <p class="text-gray-300 text-base md:text-lg">
+              We're planning our next meetup for 2026! Stay tuned for updates. Join our Discord and Facebook community to stay in the loop.
+            </p>
           </div>
         </div>
       </section>
 
-      <Speakers />
-      <Oranizers />
-      <Sponsors />
+      <!-- About Section -->
+      <section class="py-16 md:py-24 space-y-8 md:space-y-12 slide-up">
+        <div class="text-center space-y-4">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 font-oswald uppercase">
+            About Us
+          </h2>
+          <div class="w-20 md:w-24 lg:w-32 h-1 bg-gradient-to-r from-cyan-500 to-teal-400 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700/50 hover:border-cyan-500/30 transition-all duration-300">
+            <div class="text-4xl mb-4">🤝</div>
+            <h3 class="text-xl md:text-2xl font-bold text-cyan-300 mb-3 font-oswald uppercase">Local Hangouts</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Regular meetups and hangouts where Gophers connect, share knowledge, and build friendships in person.
+            </p>
+          </div>
+          
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700/50 hover:border-cyan-500/30 transition-all duration-300">
+            <div class="text-4xl mb-4">💬</div>
+            <h3 class="text-xl md:text-2xl font-bold text-cyan-300 mb-3 font-oswald uppercase">Online Community</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Active Discord server and Facebook group with hundreds of passionate Go developers helping each other daily.
+            </p>
+          </div>
+          
+          <div class="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-700/50 hover:border-cyan-500/30 transition-all duration-300">
+            <div class="text-4xl mb-4">🔓</div>
+            <h3 class="text-xl md:text-2xl font-bold text-cyan-300 mb-3 font-oswald uppercase">Open Source</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Contribute to open source Go projects on our GitHub organization and collaborate with fellow developers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Community Section -->
+      <section class="py-16 md:py-24 slide-up">
+        <div class="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 border border-indigo-500/20 text-center space-y-6 max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 font-oswald uppercase">
+            Join Our Community
+          </h2>
+          <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+            Connect with fellow Gophers on Discord, Facebook, and GitHub. Share knowledge, collaborate on open source, and join local hangouts.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center items-center pt-4">
+            <a href="https://discord.gg/gophersbd" 
+               target="_blank"
+               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold py-3 px-6 rounded-full shadow-xl hover:shadow-2xl hover:shadow-indigo-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+              Discord
+            </a>
+            <a href="https://www.facebook.com/groups/8890201047753940" 
+               target="_blank"
+               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              Facebook
+            </a>
+            <a href="https://github.com/GophersBangladesh" 
+               target="_blank"
+               class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 text-white font-semibold py-3 px-6 rounded-full shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:scale-105 font-oswald uppercase">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
 
       <footer class="text-center text-gray-400 pt-6 md:pt-8 lg:pt-10 border-t border-gray-700 slide-up">
         <p class="text-sm md:text-base font-light">© 2025 Gophers Bangladesh | All rights reserved.</p>
@@ -104,37 +187,21 @@ import Sponsors from '../components/sections/Sponsors.astro';
 </Layout>
 
 <style>
-  /* Container */
   .container-custom {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
   }
 
-  /* Background pattern */
   .pattern-bg {
     background-size: 20px 20px;
     background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
     opacity: 0.05;
   }
 
-  /* Info cards */
-  .info-card {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
-    background-color: rgba(17, 24, 39, 0.5);
-    backdrop-filter: blur(8px);
-    border-radius: 1rem;
-    border: 1px solid rgba(55, 65, 81, 0.5);
-  }
-
-  /* Animations */
   @keyframes float {
-    0% { transform: translateY(0px); }
+    0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
   }
 
   @keyframes gradient {
@@ -152,39 +219,10 @@ import Sponsors from '../components/sections/Sponsors.astro';
     animation: gradient 4s linear infinite;
   }
 
-  #main-content {
-    animation: fadeIn 0.8s ease-out forwards;
-  }
-
   .slide-up {
     opacity: 0;
     transform: translateY(20px);
     animation: slideUp 0.8s ease-out forwards;
-  }
-
-  .hover\:scale-102:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Gradient animation for cards */
-  @keyframes borderGlow {
-    0%, 100% { border-color: rgba(34, 211, 238, 0.3); }
-    50% { border-color: rgba(45, 212, 191, 0.3); }
-  }
-  
-  .animate-border-glow {
-    animation: borderGlow 2s ease-in-out infinite;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(6px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 
   @keyframes slideUp {
@@ -195,14 +233,6 @@ import Sponsors from '../components/sections/Sponsors.astro';
     to {
       opacity: 1;
       transform: translateY(0);
-    }
-  }
-
-  /* Custom responsive breakpoints */
-  @media (max-width: 640px) {
-    .info-card {
-      width: 100%;
-      margin: 0 auto;
     }
   }
 
@@ -217,39 +247,7 @@ import Sponsors from '../components/sections/Sponsors.astro';
   document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.slide-up');
     elements.forEach((el, index) => {
-      el.style.setProperty('--delay', index);
       el.style.animationDelay = `${index * 0.2}s`;
     });
   });
-
-  function updateCountdown() {
-    const eventDate = new Date('2025-01-11T16:00:00').getTime();
-    
-    function update() {
-      const now = new Date().getTime();
-      const distance = eventDate - now;
-      
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById('days').textContent = days.toString().padStart(2, '0');
-      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-      
-      if (distance < 0) {
-        clearInterval(timer);
-        ['days', 'hours', 'minutes', 'seconds'].forEach(id => {
-          document.getElementById(id).textContent = '00';
-        });
-      }
-    }
-    
-    update();
-    const timer = setInterval(update, 1000);
-  }
-
-  document.addEventListener('DOMContentLoaded', updateCountdown);
 </script>
